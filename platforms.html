@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="bg-red-500 p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <a class="text-white text-2xl font-bold" href="index.html"> <span class="text-green-700">SK</span> <span class="text-blue-900">BARAS</span></a>
+      <div class="lg:flex hidden space-x-8">
+        <a class="text-white" href="index.html">Home</a>
+        <a class="text-white" href="platforms.html">Platforms</a>
+        <a class="text-white" href="pictures.html">Pictures</a>
+ 
+      </div>
+      <div class="lg:hidden block">
+        <button id="menu-toggle" class="text-white">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="flex justify-center font-bold text-xl text-blue-700 mt-4">
+    <label for="">TENTATIVE PLANS AND PLATFORMS</label>
+</div>
+ <div class="flex justify-center">
+    
+    <img src="images/pl.png" alt="">
+ </div>
+
+  <script>
+    document.getElementById("menu-toggle").addEventListener("click", function() {
+      var menuItems = document.querySelector(".lg\\:flex.hidden");
+      if (menuItems.classList.contains("hidden")) {
+        menuItems.classList.remove("hidden");
+      } else {
+        menuItems.classList.add("hidden");
+      }
+    });
+  </script>
+</body>
+</html>

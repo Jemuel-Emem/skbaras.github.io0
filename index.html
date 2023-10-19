@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"  rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="bg-red-500 p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="bg-yellow-400 p-2 rounded-full">
+        <a class="text-white text-2xl font-bold" href="index.html"> <span class="text-blue-700">SK</span><span class="text-red-700">BARAS</span></a>
+      </div>
+      <div class="lg:flex hidden space-x-8">
+        <a class="text-white" href="index.html">Home</a>
+        <a class="text-white" href="platforms.html">Platforms</a>
+        <a class="text-white" href="pictures.html">Pictures</a>
+ 
+      </div>
+      <div class="lg:hidden block">
+        <button id="menu-toggle" class="text-white">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+<div id="default-carousel" class="relative w-full " data-carousel="slide">
+  <!-- Carousel wrapper -->
+  <div class="relative h-56 overflow-hidden rounded-lg md:h-96 ">
+       <!-- Item 1 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="images/jemuel.png" class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+      <!-- Item 2 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="images/arabella.png" class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+      <!-- Item 3 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="images/chris.png" class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+      <!-- Item 4 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="images/charry.png" class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+      <!-- Item 5 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="images/nikki.png" class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+        <img src="images/salome.png" class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+    </div>
+    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+      <img src="images/cj.png" class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+  </div>
+  </div>
+  <!-- Slider indicators -->
+  <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+      <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+  </div>
+  <!-- Slider controls -->
+  <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+      <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+          </svg>
+          <span class="sr-only">Previous</span>
+      </span>
+  </button>
+  <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+      <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+          </svg>
+          <span class="sr-only">Next</span>
+      </span>
+  </button>
+ </div>
+  <section>
+    <div class="relative items-center w-full px-5 pt-24 mx-auto md:px-12 lg:px-16 max-w-7xl lg:py-24">
+    <div class="mb-4">
+        <label for="" class="text-xl font-bold text-blue-700">SK SPIRANTS OF BARANGAY BARAS</label>
+    </div>
+      <div class="grid grid-cols-2 gap-12 md:grid-cols-3 lg:space-y-0 lg:text-center">
+        <div>
+          <div>
+            <div class="flex items-center justify-center text-black rounded-xl lg:mx-auto">
+              <img src="images/nikki.png" alt="" class=" ">
+            </div>
+            <p class="mt-4 text-lg font-medium leading-6 text-black">
+           Nikki Silva
+            </p>
+          </div>
+          <div class="mt-4 text-base text-gray-500">
+            "Leadership is not about being in charge. It is about taking care of those in your charge." - Simon Sinek
+          </div>
+        </div>
+        <div>
+          <div>
+            <div class="flex items-center justify-center  text-black bg-gray-100 rounded-xl lg:mx-auto">
+                <img src="images/cj.png" alt="" class=" ">
+            </div>
+            <p class="mt-4 text-lg font-medium leading-6 text-black">
+              Carl Jayson Sierra
+            </p>
+          </div>
+          <div class="mt-4 text-base text-gray-500">"The best leaders are those most interested in surrounding themselves with assistants and associates smarter than they are." - John C. Maxwell</div>
+        </div>
+        <div>
+          <div>
+            <div class="flex items-center justify-center text-black bg-gray-100 rounded-xl lg:mx-auto">
+                <img src="images/jemuel.png" alt="" class=" ">
+            </div>
+            <p class="mt-4 text-lg font-medium leading-6 text-black">
+             Jemuel Agnes
+            </p>
+          </div>
+          <div class="mt-4 text-base text-gray-500">
+            "Leadership is not about being the best. It is about making everyone else better." - Unknown
+          </div>
+        </div>
+        <div>
+          <div>
+            <div class="flex items-center justify-center  text-black bg-gray-100 rounded-xl lg:mx-auto">
+                <img src="images/salome.png" alt="" class=" ">
+            </div>
+            <p class="mt-4 text-lg font-medium leading-6 text-black">
+             John Joseph Salome
+            </p>
+          </div>
+          <div class="mt-4 text-base text-gray-500">
+            "A true leader has the confidence to stand alone, the courage to make tough decisions, and the compassion to listen to the needs of others." - Douglas MacArthur
+          </div>
+        </div>
+        <div>
+          <div>
+            <div class="flex items-center justify-center  text-black bg-gray-100 rounded-xl lg:mx-auto">
+                <img src="images/chris.png" alt="" class=" ">
+            </div>
+            <p class="mt-4 text-lg font-medium leading-6 text-black">
+           Christian Celetaria
+            </p>
+          </div>
+          <div class="mt-4 text-base text-gray-500">
+            Custom backend code with logs and error handling.
+          </div>
+        </div>
+        <div>
+          <div>
+            <div class="flex items-center justify-center text-black bg-gray-100 rounded-xl lg:mx-auto">
+                <img src="images/charry.png" alt="" class=" ">
+            </div>
+            <p class="mt-4 text-lg font-medium leading-6 text-black">Charry Joy Romero </p>
+          </div>
+          <div class="mt-4 text-base text-gray-500">
+            "Leadership is the capacity to translate vision into reality." - Warren Bennis
+          </div>
+        </div>
+
+        <div>
+            <div>
+              <div class="flex items-center justify-center text-black bg-gray-100 rounded-xl lg:mx-auto">
+                  <img src="images/heaven.png" alt="" class=" ">
+              </div>
+              <p class="mt-4 text-lg font-medium leading-6 text-black">Heaven Faith Dativo </p>
+            </div>
+            <div class="mt-4 text-base text-gray-500">
+                The greatest leader is not necessarily the one who does the greatest things. He is the one that gets the people to do the greatest things." - Ronald Reagan
+            </div>
+          </div>
+
+          <div>
+            <div>
+              <div class="flex items-center justify-center text-black bg-gray-100 rounded-xl lg:mx-auto">
+                  <img src="images/charry.png" alt="" class=" ">
+              </div>
+              <p class="mt-4 text-lg font-medium leading-6 text-black">Arabella Celetaria </p>
+            </div>
+            <div class="mt-4 text-base text-gray-500">
+                "Leadership is not about being in the front. It is about getting all your ducks in a row and moving forward together." - Unknown
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    document.getElementById("menu-toggle").addEventListener("click", function() {
+      var menuItems = document.querySelector(".lg\\:flex.hidden");
+      if (menuItems.classList.contains("hidden")) {
+        menuItems.classList.remove("hidden");
+      } else {
+        menuItems.classList.add("hidden");
+      }
+    });
+  </script>
+</body>
+</html>
