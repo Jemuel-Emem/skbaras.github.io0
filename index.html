@@ -3,17 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+  
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"  rel="stylesheet" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body>
+
+ 
   <nav class="bg-red-500 p-4">
     <div class="container mx-auto flex justify-between items-center">
       <div class="bg-yellow-400 p-2 rounded-full">
         <a class="text-white text-2xl font-bold" href="index.html"> <span class="text-blue-700">SK</span><span class="text-red-700">BARAS</span></a>
       </div>
+
+       <div>
+        <marquee behavior="" direction=""><label for="" class="font-bold md:text-4xl text-xl text-blue-700">"USWAG BARAS, LIG-ON GID"</label></marquee>
+        </div>
       <div class="lg:flex hidden space-x-8">
         <a class="text-white" href="index.html">Home</a>
         <a class="text-white" href="platforms.html">Platforms</a>
@@ -29,478 +38,1006 @@
       </div>
     </div>
   </nav>
+  <div class="flex justify-center gap-2 p-4 underline text-xl font-itallic text-blue-500">
+  <div><a href="platforms.html" class="hover:text-blue-700">Platforms</a></div>
+  <div><a href="pictures.html" class="hover:text-blue-700">Images</a></div>
+  </div>
+<div id="default-carousel" class="relative w-full " data-carousel="slide">
+  <!-- Carousel wrapper -->
+  <div class="relative h-56 overflow-hidden rounded-lg md:h-96 ">
+       <!-- Item 1 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="images/bg.png" class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+      <!-- Item 2 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="images/bg.png" class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+      <!-- Item 3 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="images/bg.png" class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+      <!-- Item 4 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="images/bg.png" class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+      <!-- Item 5 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="images/bg.png" class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
 
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+        <img src="images/bg.png" class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+    </div>
+    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+      <img src="images/bg.png" class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+  </div>
+  </div>
+  <!-- Slider indicators -->
+  <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+      <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+  </div>
+  <!-- Slider controls -->
+  <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+      <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+          </svg>
+          <span class="sr-only">Previous</span>
+      </span>
+  </button>
+  <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+      <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+          </svg>
+          <span class="sr-only">Next</span>
+      </span>
+  </button>
+ </div>
   <section>
     <div class="relative items-center w-full px-5 pt-24 mx-auto md:px-12 lg:px-16 max-w-7xl lg:py-24">
-      <div class="flex justify-center font-bold text-4xl mb-8 relative">
-        <div class="absolute bottom-6"><span class="text-blue-700">Plans &</span> <span class="text-red-700">Platforms</span></div>
-       </div>
+    <div class="mb-4">
+        <label for="" class="text-xl font-bold text-blue-700">SK SPIRANTS OF BARANGAY BARAS</label>
+    </div>
       <div class="grid grid-cols-2 gap-12 md:grid-cols-3 lg:space-y-0 lg:text-center">
-        <div data-modal-target="rainbow" data-modal-toggle="rainbow">
+        <div class="holder">
           <div>
-            <div class="flex items-center justify-center w-12 h-12 text-green-900 bg-green-800 rounded-xl lg:mx-auto">
-              ❖
+            <div class="flex items-center justify-center text-black rounded-xl lg:mx-auto w-full">
+              <img src="images/nikki.jpg" alt="" class="">
             </div>
             <p class="mt-4 text-lg font-medium leading-6 text-black">
-              Project Rainbow
+           Nikki Silva
             </p>
           </div>
-          <div class="mt-4 text-base text-gray-500">
-            Committee on Education 
-          </div>
-        </div>
-        <div data-modal-target="staticModal" data-modal-toggle="staticModal">
-          <div>
-            <div class="flex items-center justify-center w-12 h-12 text-blue-500 bg-blue-100 rounded-xl lg:mx-auto">
-              ❖
-            </div>
-            <p class="mt-4 text-lg font-medium leading-6 text-black">
-              Project Blue
-            </p>
-          </div>
-          <div class="mt-4 text-base text-gray-500">
-            Committee on Education 
-          </div>
-        </div>
-       
-     
-        <div data-modal-target="orange" data-modal-toggle="orange">
-          <div>
-            <div class="flex items-center justify-center w-12 h-12 text-yellow-600 bg-yellow-500 rounded-xl lg:mx-auto">
-              ❖
-            </div>
-            <p class="mt-4 text-lg font-medium leading-6 text-black">
-             Project Orange
-            </p>
-          </div>
-          <div class="mt-4 text-base text-gray-500">
-            Committee on Youth Participation, Employment, and Livelihood
-          </div>
-        </div>
-        <div data-modal-target="white" data-modal-toggle="white">
-          <div>
-            <div class="flex items-center justify-center w-12 h-12 text-black bg-gray-100 rounded-xl lg:mx-auto">
-              ❖
-            </div>
-            <p class="mt-4 text-lg font-medium leading-6 text-black">
-              Project White
-            </p>
-          </div>
-          <div class="mt-4 text-base text-gray-500">
-            Committee on Health, Hygiene Sanitation and Nutrition
-          </div>
-        </div>
-        <div data-modal-target="red" data-modal-toggle="red">
-          <div>
-            <div class="flex items-center justify-center w-12 h-12 text-red-700 bg-red-100 rounded-xl lg:mx-auto">
-              ❖
-            </div>
-            <p class="mt-4 text-lg font-medium leading-6 text-black">
-              Project Red
-            </p>
-          </div>
-          <div class="mt-4 text-base text-gray-500">
-            Committee on Peace and Order,
-            Anti-Drug Abuse and Public Safety            
-          </div>
-        </div>
-        <div data-modal-target="yellow" data-modal-toggle="yellow">
-          <div>
-            <div class="flex items-center justify-center w-12 h-12 text-yellow-500 bg-yellow-100 rounded-xl lg:mx-auto">
-              ❖
-            </div>
-            <p class="mt-4 text-lg font-medium leading-6 text-black">Project Yellow </p>
-          </div>
-          <div class="mt-4 text-base text-gray-500">
-            Committee on Academic, Socio Cultural and Sports Development
-          </div>
-        </div>
 
-        <div data-modal-target="pink" data-modal-toggle="pink">
+          <div class="container">       
           <div>
-            <div class="flex items-center justify-center w-12 h-12 text-pink-700 bg-pink-100 rounded-xl lg:mx-auto">
-              ❖
+            <div class="mt-4 text-base text-gray-500 flex justy-start">
+              <label for="" class="font-bold text-blue-700 text-xl">Educational Background</label>
             </div>
-            <p class="mt-4 text-lg font-medium leading-6 text-black">Project Pink </p>
-          </div>
-          <div class="mt-4 text-base text-gray-500">
-            Committee on Social Inclusion and Equity and Gender and Development
-          </div>
-        </div>
+            <div class="">
+              <div class="mt-4 text-base text-gray-500 flex justify-start">
+                <label for="">Elementary:</label>
+              </div>
+              <div class="flex-row justify-start">
+                <label for="">Josue S. Alcasid Central School</label>
+                <div>
+                  <p>(First Honorable Mention)</p>
+                </div>
+              </div>
+            </div>
+  
+            <div class="">
+              <div class="mt-4 text-base text-gray-500 flex justify-start">
+                <label for="">Highschool:</label>
+              </div>
+              <div class="flex-row justify-start">
+                <label for="">Apolinario S. Bernardo National Highschool</label>
+                <div>
+                  <p>(With Honors)</p>
+                </div>
+              </div>
+            </div>
+  
+            <div class="">
+              <div class="mt-4 text-base text-gray-500 flex justify-start">
+                <label for="">Senior Highschool</label>
+              </div>
+              <div class="flex-row justify-start">
+                <label for="">Apolinario S. Bernardo National Highschool</label>
+                <div>
+                  <p>(With Honors)</p>
+                </div>
+              </div>
+            </div>
 
-        <div data-modal-target="purple" data-modal-toggle="purple">
-          <div>
-            <div class="flex items-center justify-center w-12 h-12 text-Violet-200  rounded-xl lg:mx-auto" style="color: #581c87; background-color:#9333ea">
-              ❖
+            <div class="">
+              <div class="mt-4 text-base text-gray-500 flex justify-start">
+                <label for="">Tertiary:</label>
+              </div>
+              <div class="flex-row justify-start">
+                <label for="">Sultan Kudarat State University</label>
+                <div>
+                  <p>(Bachelor of Science in Biology - 4th Year)</p>
+                </div>
+              </div>
             </div>
-            <p class="mt-4 text-lg font-medium leading-6 text-black">Project Purple </p>
           </div>
-          <div class="mt-4 text-base text-gray-500">
-            Committee on Mass Media Information and Communication	-	For SK Sec. 	-	Fb page 
-            -	(Social media literacy symposium) 
+        
+          <div id="accordion-collapse" data-accordion="collapse" class="mt-4">
+            <h2 id="accordion-collapse-heading-1">
+              <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500  focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800  dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800" data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-1">
+                <span>View More</span>
+                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                </svg>
+              </button>
+            </h2>
+            <div id="accordion-collapse-body-1" class="hidden" aria-labelledby="accordion-collapse-heading-1">
+              <div>
+                <div class="mt-4 text-base text-gray-500 flex justify-start">
+                  <label for="" class="font-bold text-blue-700 text-xl">Leadership Experience</label>
+                </div>
+                <div class="mt-4 text-base text-gray-500 flex justify-start">
+                  <label for="">Experience</label>
+                </div>
+                <ul class="list-disc list-inside mt-2 " id="leadership-list">
+                  <li style="text-align: left;">SPG Officer (2009-2013)</li>
+                  <li style="text-align: left;">SPG Treasurer (Division 2013)</li>
+                  <li style="text-align: left;">SSG Treasurer (2018)</li>
+                  <li style="text-align: left;">SSG President (2020)</li>
+                  <li style="text-align: left;">SSG Federation Secretary (Tacurong Division)</li>
+                  <li style="text-align: left;">Student Leadership & Youth Disaster Readiness Development Program Workshop</li>
+                  <li style="text-align: left;">Samahan ng Iskolar (Vice President)</li>
+                </ul>
+                
+              </div>
+
+              <div>
+                <div class="mt-4 text-base text-gray-500">
+                  <label for="" class="font-bold text-blue-700 text-xl flex justify-start">Achievements</label>
+                </div>
+                <div class="mt-4 text-base text-gray-500 flex justify-start">
+                  <label for="">Achievements</label>
+                </div>
+                <ul class="list-disc list-inside mt-2">
+                  <li style="text-align: left;">With Honors</li>
+                  <li style="text-align: left;">CTAA Chess Qualifier</li>
+                  <li style="text-align: left;">Radio Broadcasting Second Place</li>
+                  <li style="text-align: left;">Batang Apolinarian </li>
+                  <li style="text-align: left;">Leadership Award </li>
+                </ul>
+                
+              </div>
+            </div>
+          </div>
+
+
+          </div>
+
+        </div>
+        <div>
+          <div>
+            <div class="flex items-center justify-center  text-black bg-gray-100 rounded-xl lg:mx-auto">
+                <img src="images/cj.jpg" alt="" class=" ">
+            </div>
+            <p class="mt-4 text-lg font-medium leading-6 text-black">
+              Carl Jayson Sierra
+            </p>
+          </div>
+          <div class="container">       
+            <div>
+              <div class="mt-4 text-base text-gray-500 flex justy-start">
+                <label for="" class="font-bold text-blue-700 text-xl">Educational Background</label>
+              </div>
+              <div class="">
+                <div class="mt-4 text-base text-gray-500 flex justify-start">
+                  <label for="">Elementary:</label>
+                </div>
+                <div class="flex-row justify-start">
+                  <label for="">Josue S. Alcasid Central School</label>
+                  <div>
+                    <p>(Salutatorian)</p>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="">
+                <div class="mt-4 text-base text-gray-500 flex justify-start">
+                  <label for="">Highschool:</label>
+                </div>
+                <div class="flex-row justify-start">
+                  <label for="">Apolinario S. Bernardo National Highschool</label>
+                  <div>
+                    <p>(With High Honors)</p>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="">
+                <div class="mt-4 text-base text-gray-500 flex justify-start">
+                  <label for="">Senior Highschool</label>
+                </div>
+                <div class="flex-row justify-start">
+                  <label for="">Sultan Kudarat Statet University Laboratory Highschool</label>
+                  <div>
+                    <p>(Salutatorian)</p>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="">
+                <div class="mt-4 text-base text-gray-500 flex justify-start">
+                  <label for="">Tertiary:</label>
+                </div>
+                <div class="flex-row justify-start">
+                  <label for="">University of Southern Mindanao </label>
+                  <div>
+                    <p>(Bachelor of Arts in Psychology - 4th Year)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="mt-4 text-base text-gray-500">
+                <label for="" class="font-bold text-blue-700 text-xl flex justify-start">Leadership Experience</label>
+              </div>
+              <div class="mt-4 text-base text-gray-500 flex justify-start">
+                <label for="">Leadership Experience</label>
+              </div>
+              <ul class="list-disc list-inside mt-2">
+                <li style="text-align: left;">Classroom Officer (Grade 1- Present)</li>
+                <li style="text-align: left;">Supreme Pupil Government (2009-2014)</li>
+                <li style="text-align: left;">Supreme Pupil Government Regional Leadership Training (2014)</li>
+                <li style="text-align: left;">Supreme Student Government District Wide - Auditor (2014)</li>
+                <li style="text-align: left;">Baras Baptist Church Youth President (2016)</li>
+                <li style="text-align: left;">English and Reading Club Officer (2016-2020)</li>
+                <li style="text-align: left;">Sports Club President (2016-2018)</li>
+                <li style="text-align: left;">Guidance Ambassador's Club Officer (2016-2018)</li>
+                <li style="text-align: left;">Computer Club Officer (2018)</li>
+                <li style="text-align: left;">A.S. Bernardo Emergency Response Team Chairman (2018)</li>
+                <li style="text-align: left;">T.L.E. Club Officer (2018)</li>
+                <li style="text-align: left;">Batch 2018 Alumni President (JHS)</li>
+                <li style="text-align: left;">Arts Club Officer (2018)</li>
+                <li style="text-align: left;">Social Science Club Officer (2020)</li>
+                <li style="text-align: left;">Batch 2020 Alumni Vice President (SHS)</li>
+                <li style="text-align: left;">USM Student Peer Facilitator's Organization (2021-2023)</li>
+                <li style="text-align: left;">Mental Health First Aid Committee Chairperson (2023)</li>
+                <li style="text-align: left;">Association of Psychology Students Officer (2023- Present)</li>
+                <li style="text-align: left;">Sultan Kudarat Baptist Youth Association Officer (2022- Present)</li>
+                <li style="text-align: left;">Samahan ng Iskolar ng Baranggay Baras President (2021-Present)</li>
+              </ul>
+            </div>
             
-          </div>
+          
+            <div>
+              <div class="mt-4 text-base text-gray-500">
+                <label for="" class="font-bold text-blue-700 text-xl flex justify-start">Achievements</label>
+              </div>
+              <div class="mt-4 text-base text-gray-500 flex justify-start">
+                <label for="">Achievements</label>
+              </div>
+              <ul class="list-disc list-inside mt-2">
+                <li style="text-align: left;">Consistent Honor Student (Kinder - Grade 12)</li>
+                <li style="text-align: left;">Campus Journalist - DSPC (2011-2018)</li>
+                <li style="text-align: left;">STDAA Qualified - Volleyball (2012-2014)</li>
+                <li style="text-align: left;">CTAA Qualified - Volleyball (2012-2014; 2017)</li>
+                <li style="text-align: left;">SRAA Qualified - Volleyball (2014)</li>
+                <li style="text-align: left;">Boy's Scout of the Year (2014)</li>
+                <li style="text-align: left;">Science Olympics Individual Quiz (District Wide) - Champion (2010-2011)</li>
+                <li style="text-align: left;">Math Olympics Individual Quiz (District Wide) - 2nd Place (2010-2011)</li>
+                <li style="text-align: left;">MTAP 2nd Round Qualifier (2010)</li>
+                <li style="text-align: left;">Ecoscilympics Team Quiz (Division Wide) - Champion (2016)</li>
+                <li style="text-align: left;">Bible Class - Bronze Medalist (2017)</li>
+                <li style="text-align: left;">Batang Apolinarian Awardee (2018)</li>
+                <li style="text-align: left;">Nonito Bernardo Excellence Awardee (2018)</li>
+                <li style="text-align: left;">Leadership Awardee (2018)</li>
+                <li style="text-align: left;">UPCAT Passer (2020)</li>
+                <li style="text-align: left;">LNK Individual Quiz (City Wide) - 3rd Place (2021)</li>
+                <li style="text-align: left;">LNK Team Quiz (City Wide) - 2nd Place (2023)</li>
+                <li style="text-align: left;">Head Facilitator of Mental Health First-Aid Training - University Wide (2023)</li>
+                <li style="text-align: left;">Head Facilitator of Mental Health First-Aid Training for AFP-10th Field Artillery Battalion (2023)</li>
+                <li style="text-align: left;">President's Lister (4 semesters)</li>
+                <li style="text-align: left;">Dean's Lister (1 semester)</li>
+                <li style="text-align: left;">Special Program for the Employment of Students Beneficiary (2022-2023)</li>
+              </ul>
+            </div>
+            
+            </div>
         </div>
+        <div>
+          <div>
+            <div class="flex items-center justify-center text-black bg-gray-100 rounded-xl lg:mx-auto">
+                <img src="images/jemuel.jpg" alt="" class=" ">
+            </div>
+            <p class="mt-4 text-lg font-medium leading-6 text-black">
+             Jemuel Agnes
+            </p>
+          </div>
+          <div class="container">       
+            <div>
+              <div class="mt-4 text-base text-gray-500 flex justy-start">
+                <label for="" class="font-bold text-blue-700 text-xl">Educational Background</label>
+              </div>
+              <div class="">
+                <div class="mt-4 text-base text-gray-500 flex justify-start">
+                  <label for="">Elementary:</label>
+                 
+                </div>
+                <div class="flex-row justify-start">
+                  <label for="">Josue S. Alcasid Central School</label>
+                 <div>
+                  <label for="">()</label>
+                 </div>
+                 
+                </div>
+              </div>
+    
+              <div class="">
+                <div class="mt-4 text-base text-gray-500 flex justify-start">
+                  <label for="">Highschool:</label>
+                </div>
+                <div class="flex-row justify-start">
+                  <label for="">Apolinario S. Bernardo National Highschool</label>
+                  <div>
+                    <p>(With Honors)</p>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="">
+                <div class="mt-4 text-base text-gray-500 flex justify-start">
+                  <label for="">Senior Highschool</label>
+                </div>
+                <div class="flex-row justify-start">
+                  <label for="">System Technology Institue</label>
+                  <div>
+                    <p>(With Honors)</p>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="">
+                <div class="mt-4 text-base text-gray-500 flex justify-start">
+                  <label for="">Tertiary:</label>
+                </div>
+                <div class="flex-row justify-start">
+                  <label for="">Sultan Kudarat State University</label>
+                  <div>
+                    <p>(Bachelor of Science in Infomation Technology - 4th Year)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div>
+              <div class="mt-4 text-base text-gray-500 flex justify-start">
+                <label for="" class="font-bold text-blue-700 text-xl">Leadership Experience</label>
+              </div>
+              <div class="mt-4 text-base text-gray-500 flex justify-start">
+                <label for="">Experience</label>
+              </div>
+              <ul class="list-disc list-inside mt-2">
+                <li style="text-align: left;">Classroom Officer (2015-2018)</li>
+                <li style="text-align: left;">ASBERT</li>
+                <li style="text-align: left;">TLE Officer</li>
+                <li style="text-align: left;">Teatro Isulan Member</li>
+                <li style="text-align: left;">Teatro STI Officer (2020-2021)</li>
+                <li style="text-align: left;">Samahan ng Mga Iskolar</li>
+
+              </ul>
+              
+            </div>
+          
+            <div>
+              <div class="mt-4 text-base text-gray-500">
+                <label for="" class="font-bold text-blue-700 text-xl flex justify-start">Achievements</label>
+              </div>
+              <div class="mt-4 text-base text-gray-500 flex justify-start">
+                <label for="">Achievements</label>
+              </div>
+              <ul class="list-disc list-inside mt-2">
+                <li style="text-align: left;">Athlete of The Year(2014)</li>
+                <li style="text-align: left;">With Honors</li>
+                <li style="text-align: left;">Deans Lister</li>
+                <li style="text-align: left;">Batang Apolinarian</li>
+                <li style="text-align: left;">CTAA Deligate (Volleyball)</li>
+                <li style="text-align: left;">CTAA Deligate (Takraw)</li>
+                <li style="text-align: left;">SRAA Deligate</li>
+                <li style="text-align: left;">Folkdance (Third Placer 2016)</li>
+                <li style="text-align: left;">Mr. Math Wizard Second Runner Up (Tacurong Divison Wide-2017) </li>
+                <li style="text-align: left;">Mr. CSDT Second Runner Up (Tacurong Division Wide-2017) </li>
+                <li style="text-align: left;">Folkdance (Third Placer 2018)</li>
+                <li style="text-align: left;">Hiphop Third Placer General Santos City</li>
+                <li style="text-align: left;">Hiphop 4th Placer Davao City</li>
+                <li style="text-align: left;">Hiphop 2nd Placer South Cotabato </li>
+                <li style="text-align: left;">Best Product Expo - 2018 (2020-2021)</li>
+                <li style="text-align: left;">Champion Massdance Choreographer (South Cotabato Inter School 2020-2021)</li>
+                <li style="text-align: left;">Cluster 5 Choreographer Third Placer (2022-2023)</li>
+                <li style="text-align: left;">Hiphop Champion Intramurals (2022-2023)</li>
+                <li style="text-align: left;">Hihop 5th Placer (2022-2023)</li>
+              
+              </ul>
+              
+            </div>
+            </div>
+        </div>
+        <div>
+          <div>
+            <div class="flex items-center justify-center  text-black bg-gray-100 rounded-xl lg:mx-auto">
+                <img src="images/salome.jpg" alt="" class=" ">
+            </div>
+            <p class="mt-4 text-lg font-medium leading-6 text-black">
+             Jan Joseph Salome
+            </p>
+          </div>
+          <div class="container">       
+            <div>
+              <div class="mt-4 text-base text-gray-500 flex justy-start">
+                <label for="" class="font-bold text-blue-700 text-xl">Educational Background</label>
+              </div>
+              <div class="">
+                <div class="mt-4 text-base text-gray-500 flex justify-start">
+                  <label for="">Elementary:</label>
+                </div>
+                <div class="flex-row justify-start">
+                  <label for="">Josue S. Alcasid Central School</label>
+                  <div>
+                    <p>(May Karangalan)</p>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="">
+                <div class="mt-4 text-base text-gray-500 flex justify-start">
+                  <label for="">Highschool:</label>
+                </div>
+                <div class="flex-row justify-start">
+                  <label for="">Apolinario S. Bernardo National Highschool</label>
+                  <div>
+                    <p>(With Honors)</p>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="">
+                <div class="mt-4 text-base text-gray-500 flex justify-start">
+                  <label for="">Senior Highschool</label>
+                </div>
+                <div class="flex-row justify-start">
+                  <label for="">Apolinario S. Bernardo National Highschool</label>
+                  <div>
+                    <p>(With Honors)</p>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="">
+                <div class="mt-4 text-base text-gray-500 flex justify-start">
+                  <label for="">Tertiary:</label>
+                </div>
+                <div class="flex-row justify-start">
+                  <label for="">University of Southern Mindanao</label>
+                  <div>
+                    <p>(Bachelor of Physical Education - 2nd Year)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="mt-4 text-base text-gray-500">
+                <label for="" class="font-bold text-blue-700 text-xl flex justify-start">Leadership Experience</label>
+              </div>
+              <div class="mt-4 text-base text-gray-500 flex justify-start">
+                <label for="">Leadership Experience</label>
+              </div>
+              <ul class="list-disc list-inside mt-2">
+                <li style="text-align: left;">Supreme Pupil Government - President SY - 2014-2015 (JACS)</li>
+                <li style="text-align: left;">CTAA - Volleyball Delegates 2013-2014 (1st Runner Up) (Team Captain)</li>
+                <li style="text-align: left;">SRAA - Volleyball Delegates 2014-2015 (Team Captain)</li>
+                <li style="text-align: left;">Boyscout of the Philippines - Provincial Level Platoon Commander Delegates 2013-2014</li>
+                <li style="text-align: left;">Boyscout of the Philippines - National Jamboree (Davao City) Platoon Commander 2013-2014</li>
+                <li style="text-align: left;">Boyscout of the Philippines - National Jamboree (Tagum City) Platoon Commander 2014-2015</li>
+                <li style="text-align: left;">Boyscout of the Philippines - Centennial National Jamboree (Zamboanga Sibugay) Platoon Commander 2012-2013</li>
+                <li style="text-align: left;">Regional Leadership Training (Supreme Pupil Government)</li>
+                <li style="text-align: left;">Classroom Officer from Grade 1 to Present</li>
+                <li style="text-align: left;">Math Club Officer (Business Manager)</li>
+                <li style="text-align: left;">English Club Officer (Business Manager)</li>
+                <li style="text-align: left;">ICT Club Officer</li>
+                <li style="text-align: left;">YES-O Club Officer (Vice President)</li>
+                <li style="text-align: left;">ASBERT Officer</li>
+                <li style="text-align: left;">Clinic Club (Peace Officer)</li>
+                <li style="text-align: left;">Sports Club (Auditor)</li>
+              </ul>
+            </div>
+            
+          
+            <div>
+              <div class="mt-4 text-base text-gray-500">
+                <label for="" class="font-bold text-blue-700 text-xl flex justify-start">Achievements</label>
+              </div>
+              <div class="mt-4 text-base text-gray-500 flex justify-start">
+                <label for="">Achievements</label>
+              </div>
+              <ul class="list-disc list-inside mt-2">
+                <li style="text-align: left;">CTAA - Volleyball Delegates 2012-2013 (1st Runner Up)</li>
+                <li style="text-align: left;">CTAA - Volleyball Delegates 2013-2014 (1st Runner Up)</li>
+                <li style = "text-align: left;">SRAA - Volleyball Delegates (2014-2015)</li>
+                <li style="text-align: left;">Athlete of the Year (2014-2015)</li>
+                <li style="text-align: left;">BOYSCOUT NG TAON since (2012 to 2015)</li>
+                <li style="text-align: left;">Boyscout of the Philippines - Provincial Level (2013-2014)</li>
+                <li style="text-align: left;">Boyscout of the Philippines - National Jamboree (Davao City) (2013 - 2014)</li>
+                <li style="text-align: left;">Boyscout of the Philippines - National Jamboree (Tagum City) (2014-2015)</li>
+                <li style="text-align: left;">MATHEMATICS FESTIVAL (RUBIC CUBE) 2nd Placer</li>
+                <li style="text-align: left;">SCIENCE FESTIVAL 2nd Placer</li>
+                <li style="text-align: left;">Boyscout of the Philippines - Centennial National Jamboree (Zamboanga Sibugay) (2012 - 2013)</li>
+                <li style="text-align: left;">LANDSCAPING SCHOOL LEVEL (Champion)</li>
+                <li style="text-align: left;">JCI- YOUTH LEADERSHIP EXCELLENCE AWARDEE (2014-2015)</li>
+                <li style="text-align: left;">KAMPELAN JAYCE LEADERSHIP AWARDEE (2014-2015)</li>
+              </ul>
+            </div>
+            
+            </div>
+        </div>
+        <div>
+          <div>
+            <div class="flex items-center justify-center  text-black bg-gray-100 rounded-xl lg:mx-auto">
+                <img src="images/chris.jpg" alt="" class=" ">
+            </div>
+            <p class="mt-4 text-lg font-medium leading-6 text-black">
+              Christian P. Celetaria
+             </p>
+           
+          </div>
+          <div class="container">       
+            <div>
+              <div class="mt-4 text-base text-gray-500 flex justy-start">
+                <label for="" class="font-bold text-blue-700 text-xl">Educational Background</label>
+              </div>
+              <div class="">
+                <div class="mt-4 text-base text-gray-500 flex justify-start">
+                  <label for="">Elementary:</label>
+                  
+                </div>
+                <div class="flex-row justify-start">
+                  <label for="">Josue S. Alcasid Central School</label>
+                  <div>
+                    <p>(With Honors)</p>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="">
+                <div class="mt-4 text-base text-gray-500 flex justify-start">
+                  <label for="">Highschool:</label>
+                </div>
+                <div class="flex-row justify-start">
+                  <label for="">Apolinario S. Bernardo National Highschool</label>
+                  <div>
+                    <p>(With Honors)</p>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="">
+                <div class="mt-4 text-base text-gray-500 flex justify-start">
+                  <label for="">Senior Highschool</label>
+                </div>
+                <div class="flex-row justify-start">
+                  <label for="">Apolinario S. Bernardo National Highschool</label>
+                  <div>
+                    <p>(With Honors)</p>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="">
+                <div class="mt-4 text-base text-gray-500 flex justify-start">
+                  <label for="">Tertiary:</label>
+                </div>
+                <div class="flex-row justify-start">
+                  <label for="">Sultan Kudarat State University</label>
+                  <div>
+                    <p>(Bachelor of Secondary Education Major in Filipino - 2nd Year)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div>
+              <div class="mt-4 text-base text-gray-500">
+                <label for="" class="font-bold text-blue-700 text-xl flex justify-start">Leadership Experience</label>
+              </div>
+              <div class="mt-4 text-base text-gray-500 flex justify-start">
+                <label for="">Leadership Experience</label>
+              </div>
+              <ul class="list-disc list-inside mt-2">
+                <li style="text-align: left;">SPG REGIONAL LEVEL (2014-2015)</li>
+                <li style="text-align: left;">SPG REGIONAL LEVEL (2014-2015)</li>
+                <li style="text-align: left;">SPG OFFICER (2013-2014)</li>
+                <li style="text-align: left;">Classroom Officer (2017-2022)</li>
+                <li style="text-align: left;">Filipino Club Officer (2018-2019)</li>
+                <li style="text-align: left;">Barkada Kontra Droga (2018-2019)</li>
+                <li style="text-align: left;">YES-O Club Officer (2019-2020)</li>
+                <li style="text-align: left;">ASBERT Officer (2019-2020)</li>
+                <li style="text-align: left;">Clinic Officer (2018-2020)</li>
+                <li style="text-align: left;">Alumni Vice-President (2021-2022)</li>
+                <li style="text-align: left;">Samahan Ng Iskolar Officer (2021 to present)</li>
+                <li style="text-align: left;">SSG Officer (2021-2022)</li>
+                <li style="text-align: left;">KAMAGFIL LAKANDULA (2022-2023)</li>
+              </ul>
+            </div>
+            
+          
+            <div>
+              <div class="mt-4 text-base text-gray-500">
+                <label for="" class="font-bold text-blue-700 text-xl flex justify-start">Achievements</label>
+              </div>
+              <div class="mt-4 text-base text-gray-500 flex justify-start">
+                <label for="">Achievements</label>
+              </div>
+              <ul class="list-disc list-inside mt-2">
+                <li style="text-align: left;">Boy Scout Provincial Level (2015-2016)</li>
+                <li style="text-align: left;">CTAA Volleyball Deligates (2013-2014)</li>
+                <li style="text-align: left;">CTAA (2012-2013)</li>
+                <li style="text-align: left;">Landscaping School Level (Champion 2018-19)</li>
+                <li style="text-align: left;">Landscaping Regional Level (2018-2019)</li>
+              </ul>
+            </div>
+            
+            </div>
+        </div>
+        <div>
+          <div>
+            <div class="flex items-center justify-center text-black bg-gray-100 rounded-xl lg:mx-auto">
+                <img src="images/charry.jpg" alt="" class=" ">
+            </div>
+            <p class="mt-4 text-lg font-medium leading-6 text-black">Charry Joy Romero </p>
+          </div>
+          <div class="container">       
+            <div>
+              <div class="mt-4 text-base text-gray-500 flex justy-start">
+                <label for="" class="font-bold text-blue-700 text-xl">Educational Background</label>
+              </div>
+              <div class="">
+                <div class="mt-4 text-base text-gray-500 flex justify-start">
+                  <label for="">Elementary:</label>
+                </div>
+                <div class="flex-row justify-start">
+                  <label for="">Josue S. Alcasid Central School</label>
+                  <div>
+                    <p>(First Honorable Mention)</p>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="">
+                <div class="mt-4 text-base text-gray-500 flex justify-start">
+                  <label for="">Highschool:</label>
+                </div>
+                <div class="flex-row justify-start">
+                  <label for="">Apolinario S. Bernardo National Highschool</label>
+                  <div>
+                    <p>(With Honors)</p>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="">
+                <div class="mt-4 text-base text-gray-500 flex justify-start">
+                  <label for="">Senior Highschool</label>
+                </div>
+                <div class="flex-row justify-start">
+                  <label for="">Apolinario S. Bernardo National Highschool</label>
+                  <div>
+                    <p>(With Honors)</p>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="">
+                <div class="mt-4 text-base text-gray-500 flex justify-start">
+                  <label for="">Tertiary:</label>
+                </div>
+                <div class="flex-row justify-start">
+                  <label for="">Sultan Kudarat State University</label>
+                  <div>
+                    <p>(Bachelor of Science in Biology - 4th Year)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div>
+              <div class="mt-4 text-base text-gray-500 flex justify-start">
+                <label for="" class="font-bold text-blue-700 text-xl">Leadership Experience</label>
+              </div>
+              <div class="mt-4 text-base text-gray-500 flex justify-start">
+                <label for="">Experience</label>
+              </div>
+              <ul class="list-disc list-inside mt-2">
+                <li style="text-align: left;">SPG Officer (2009-2013)</li>
+                <li style="text-align: left;">SPG Treasurer (Division 2013)</li>
+                <li style="text-align: left;">SSG Treasurer (2018)</li>
+                <li style="text-align: left;">SSG President (2020)</li>
+                <li style="text-align: left;">SSG Federation Secretary (Tacurong Division)</li>
+                <li style="text-align: left;">Student Leadership & Youth Disaster Readiness Development Program Workshop</li>
+                <li style="text-align: left;">Samahan ng Iskolar (Vice President)</li>
+              </ul>
+              
+            </div>
+          
+            <div>
+              <div class="mt-4 text-base text-gray-500">
+                <label for="" class="font-bold text-blue-700 text-xl flex justify-start">Achievements</label>
+              </div>
+              <div class="mt-4 text-base text-gray-500 flex justify-start">
+                <label for="">Achievements</label>
+              </div>
+              <ul class="list-disc list-inside mt-2">
+                <li style="text-align: left;">With Honors</li>
+                <li style="text-align: left;">STDAA Chess Qualifier</li>
+                <li style="text-align: left;">CTAA Chess Qualifier</li>
+                <li style="text-align: left;">Radio Broadcasting Second Place</li>
+                <li style="text-align: left;">Batang Apolinarian </li>
+                <li style="text-align: left;">Leadership Award </li>
+              </ul>
+              
+            </div>
+            </div>
+        </div>
+
+        <div>
+            <div>
+              <div class="flex items-center justify-center text-black bg-gray-100 rounded-xl lg:mx-auto">
+                  <img src="images/heaven.jpg" alt="" class=" ">
+              </div>
+              <p class="mt-4 text-lg font-medium leading-6 text-black">Heaven Faith Dativo </p>
+            </div>
+            <div class="container">       
+              <div>
+                <div class="mt-4 text-base text-gray-500 flex justy-start">
+                  <label for="" class="font-bold text-blue-700 text-xl">Educational Background</label>
+                </div>
+                <div class="">
+                  <div class="mt-4 text-base text-gray-500 flex justify-start">
+                    <label for="">Elementary:</label>
+                    
+                  </div>
+                  <div class="flex-row justify-start">
+                    <label for="">Josue S. Alcasid Central School</label>
+                    <div>
+                      <p>(With Honors)</p>
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="">
+                  <div class="mt-4 text-base text-gray-500 flex justify-start">
+                    <label for="">Highschool:</label>
+                  </div>
+                  <div class="flex-row justify-start">
+                    <label for="">Apolinario S. Bernardo National Highschool</label>
+                    <div>
+                      <p>(With Honors)</p>
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="">
+                  <div class="mt-4 text-base text-gray-500 flex justify-start">
+                    <label for="">Senior Highschool</label>
+                  </div>
+                  <div class="flex-row justify-start">
+                    <label for="">Apolinario S. Bernardo National Highschool</label>
+                    <div>
+                      <p>(With Honors)</p>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="">
+                  <div class="mt-4 text-base text-gray-500 flex justify-start">
+                    <label for="">Tertiary:</label>
+                  </div>
+                  <div class="flex-row justify-start">
+                    <label for="">Sultan Kudarat State University</label>
+                    <div>
+                      <p>(Deans List)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+              <div>
+                <div class="mt-4 text-base text-gray-500 flex justify-start">
+                  <label for="" class="font-bold text-blue-700 text-xl">Leadership Experience</label>
+                </div>
+                <div class="mt-4 text-base text-gray-500 flex justify-start">
+                  <label for="">Experience</label>
+                </div>
+                <ul class="list-disc list-inside mt-2">
+                  <li style="text-align: left;">Math Club Officer</li>
+                  <li style="text-align: left;">Classroom Officer </li>
+                  <li style="text-align: left;">BEED Class Secretary </li>
+                  
+                </ul>
+                
+              </div>
+            
+              <div>
+                <div class="mt-4 text-base text-gray-500">
+                  <label for="" class="font-bold text-blue-700 text-xl flex justify-start">Achievements</label>
+                </div>
+                <div class="mt-4 text-base text-gray-500 flex justify-start">
+                  <label for="">Achievements</label>
+                </div>
+                <ul class="list-disc list-inside mt-2">
+                  <li style="text-align: left;">Deans Lister (1st Sem - 2nd Sem)</li>
+                  <li style="text-align: left;">Honor Student</li>
+                  <li style="text-align: left;">OPOP Music Participants (2019-2020)</li>
+                  <li style="text-align: left;">Bible Class Awardee </li>
+                  <li style="text-align: left;">Spoken Poetry Participants </li>
+                  <li style="text-align: left;">Sabayang Pagbikas Participants </li>
+                </ul>
+                
+              </div>
+              </div>
+          </div>
+
+          <div>
+            <div>
+              <div class="flex items-center justify-center text-black bg-gray-100 rounded-xl lg:mx-auto">
+                  <img src="images/arabella.jpg" alt="" class=" ">
+              </div>
+              <p class="mt-4 text-lg font-medium leading-6 text-black">Arabella Celetaria </p>
+            </div>
+            <div class="container">       
+              <div>
+                <div class="mt-4 text-base text-gray-500 flex justy-start">
+                  <label for="" class="font-bold text-blue-700 text-xl">Educational Background</label>
+                </div>
+                <div class="">
+                  <div class="mt-4 text-base text-gray-500 flex justify-start">
+                    <label for="">Elementary:</label>
+                  </div>
+                  <div class="flex-row justify-start">
+                    <label for="">Josue S. Alcasid Central School</label>
+                    <div>
+                      <p>(First Honorable Mention)</p>
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="">
+                  <div class="mt-4 text-base text-gray-500 flex justify-start">
+                    <label for="">Highschool:</label>
+                  </div>
+                  <div class="flex-row justify-start">
+                    <label for="">Apolinario S. Bernardo National Highschool</label>
+                    <div>
+                      <p>(With Honors)</p>
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="">
+                  <div class="mt-4 text-base text-gray-500 flex justify-start">
+                    <label for="">Senior Highschool</label>
+                  </div>
+                  <div class="flex-row justify-start">
+                    <label for="">Apolinario S. Bernardo National Highschool</label>
+                    <div>
+                      <p>(With High Honors)</p>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="">
+                  <div class="mt-4 text-base text-gray-500 flex justify-start">
+                    <label for="">Tertiary:</label>
+                  </div>
+                  <div class="flex-row justify-start">
+                    <label for="">Sultan Kudarat State University</label>
+                    <div>
+                      <p>(Bachelor of Secondary Education Major in Filipino  - 2nd Year)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+              <div>
+                <div class="mt-4 text-base text-gray-500 flex justify-start">
+                  <label for="" class="font-bold text-blue-700 text-xl">Leadership Experience</label>
+                </div>
+                <div class="mt-4 text-base text-gray-500 flex justify-start">
+                  <label for="">Experience</label>
+                </div>
+                <ul class="list-disc list-inside mt-2">
+                  <li style="text-align: left;">Guidance Club Auditor (2017-2018)</li>
+                  <li style="text-align: left;">SSG P.I.O (2018-2019)</li>
+                  <li style="text-align: left;">Yes-O Vice-president (2018-2019)</li>
+                  <li style="text-align: left;">Barkada Kontra Droga Member (2018-2019)</li>
+                  <li style="text-align: left;">Guidance Club president (2019-2020)</li>
+                  <li style="text-align: left;">T.L.E Club president (2019-2020)</li>
+                  <li style="text-align: left;">ASBERT Member (2019-2020)</li>
+                  <li style="text-align: left;">English Club Secretary (2019-2020)</li>
+                  <li style="text-align: left;">Classroom Officer (2017-2022) </li>
+                  <li style="text-align: left;">SSG Vice president ( 2021-2022)</li>
+                  <li style="text-align: left;">ASBERT Chairwoman (2021-2022)</li>
+                  <li style="text-align: left;">Katipunan ng Kabataan Secretary (2022-2023)</li>
+                  <li style="text-align: left;">ASBERT Chairwoman (2021-2022)</li>
+                  <li style="text-align: left;">SILC Scretary (2022-2023)</li>
+                  <li style="text-align: left;">KAMAGFIL Peace Officer ( 2023-2024)</li>
+                 
+                </ul>
+                
+              </div>
+            
+              <div>
+                <div class="mt-4 text-base text-gray-500">
+                  <label for="" class="font-bold text-blue-700 text-xl flex justify-start">Achievements</label>
+                </div>
+                <div class="mt-4 text-base text-gray-500 flex justify-start">
+                  <label for="">Achievements</label>
+                </div>
+                <ul class="list-disc list-inside mt-2">
+                  <li style="text-align: left;">Campus Journalist (2017-2018)</li>
+                  <li style="text-align: left;">Interpretatibong Pagbasa Division Level (2018)</li>
+                  <li style="text-align: left;">Interpretatibong Pagbasa Regional Level (2018)</li>
+                  <li style="text-align: left;">Interpretatibong Pagbasa National Level (2018)</li>
+                  <li style="text-align: left;">Radio Broadcaster 2nd place - Best in script writing (2017-2018)</li>
+                  <li style="text-align: left;">DRRM Youth Volunteer (2018)</li>
+                  <li style="text-align: left;">Super Consumer Quiz (2019)</li>
+                  <li style="text-align: left;">DRRM Quiz (2019)</li>
+                  <li style="text-align: left;">Impromptu speaking 2nd place (2019)</li>
+                  <li style="text-align: left;">Miss Math Wizard 1st runner-up (2019)</li>
+                  <li style="text-align: left;">Balagtasan 1st place (2019)</li>
+                  <li style="text-align: left;">Interpretatibong Pagbasa Division Level 1st place (2019)</li>
+                  <li style="text-align: left;">Spoken Word Poetry (2019)</li>
+                  <li style="text-align: left;">Best Researcher (2021)</li>
+                  <li style="text-align: left;">Spoken Word Poetry (2022)</li>
+                  <li style="text-align: left;">Spoken Word Poetry 3rd place (2023)</li>
+                  <li style="text-align: left;">Dagliang Talumpati 1st place (2023)</li>
+                </ul>
+                
+                
+              </div>
+              </div>
+          </div>
       </div>
     </div>
   </section>
 
 
-
-  <!-- modal area here -->
   
-<!-- Modal toggle -->
-
-
-<!-- Main modal -->
-<div id="staticModal" data-modal-backdrop="static" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
-    <div class="relative w-full max-w-2xl max-h-full">
-        <!-- Modal content -->
-        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-            <!-- Modal header -->
-            <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
-                <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-                   SK ASSIGNED - Arabella Celetaria
-                </h3>
-                <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="staticModal">
-                    <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
-                    </svg>
-                    <span class="sr-only">Close modal</span>
-                </button>
-            </div>
-            <!-- Modal body -->
-            <div class="p-6 space-y-6">
-              <div>
-                <label for="">PROJECT/ACTIVITIES</label>
-              </div>
-               <label for="">-Scholarship and Educational Assistance for ISY
-               </label>
-
-               <label for="">-Alternative Learning System for OSY
-              </label>
-
-              <label for="">-Awarding of Outstanding Iskolar/Youth
-              </label>
-            </div>
-            <!-- Modal footer -->
-            <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
- 
-                <button data-modal-hide="staticModal" type="button" class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div id="white" data-modal-backdrop="white" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
-  <div class="relative w-full max-w-2xl max-h-full">
-      <!-- Modal content -->
-      <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-          <!-- Modal header -->
-          <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
-              <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-                 SK ASSIGNED - Charry Joy Romero
-              </h3>
-              <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="white">
-                  <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
-                  </svg>
-                  <span class="sr-only">Close modal</span>
-              </button>
-          </div>
-          <!-- Modal body -->
-          <div class="p-6 space-y-6">
-            <div>
-              <label for="">PROJECT/ACTIVITIES</label>
-            </div>
-             <label for="">-Reproductive and Sexual Health Symposium (STI, STD, HIV, AIDS, Early Pregnancy)</label>
-          
-          <ul>
-            <li>•	(Condom and Lubricant: Safe Sex)</li>
-            <li>-Mental Health Awareness
-              •	(Mental health first aid symposium)
-              </li>
-              <li>- Hygiene sanitation symposium
-                •	(distribution of hygiene kits)
-                
-                </li>
-                <li>
-                  -Nutrition Programs
-•	Feeding program for Malnourished Youth 
-•	(zumbalik alindog)
-                </li>
-          </ul>
-            </div>
-          <!-- Modal footer -->
-          <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
-
-              <button data-modal-hide="staticModal" type="button" class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">Close</button>
-          </div>
-      </div>
+<footer class="bg-white rounded-lg shadow m-4 dark:bg-gray-800">
+  <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+    <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All Rights Reserved.
+  </span>
+  <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+      <li>
+          <a href="#" class="mr-4 hover:underline md:mr-6 ">About</a>
+      </li>
+      <li>
+          <a href="#" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
+      </li>
+      <li>
+          <a href="#" class="mr-4 hover:underline md:mr-6">Licensing</a>
+      </li>
+      <li>
+          <a href="#" class="hover:underline">Contact</a>
+      </li>
+  </ul>
   </div>
-</div>
+</footer>
 
-<div id="orange" data-modal-backdrop="static" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
-  <div class="relative w-full max-w-2xl max-h-full">
-      <!-- Modal content -->
-      <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-          <!-- Modal header -->
-          <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
-              <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-                 SK ASSIGNED -Jemuel Agnes
-              </h3>
-              <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="orange">
-                  <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
-                  </svg>
-                  <span class="sr-only">Close modal</span>
-              </button>
-          </div>
-          <!-- Modal body -->
-          <div class="p-6 space-y-6">
-            <div>
-              <label for="">PROJECT/ACTIVITIES</label>
-            </div>
-            <ul>
-              <li>-Youth Camp
-                </li>
-                <li>- Linggo ng Kabataan</li>
-            </ul>
-          </div>
-          <!-- Modal footer -->
-          <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
-
-              <button data-modal-hide="staticModal" type="button" class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">Close</button>
-          </div>
-      </div>
-  </div>
-</div>
-<div id="red" data-modal-backdrop="static" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
-  <div class="relative w-full max-w-2xl max-h-full">
-      <!-- Modal content -->
-      <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-          <!-- Modal header -->
-          <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
-              <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-                 SK ASSIGNED -Christian Celetaria
-              </h3>
-              <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="red">
-                  <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
-                  </svg>
-                  <span class="sr-only">Close modal</span>
-              </button>
-          </div>
-          <!-- Modal body -->
-          <div class="p-6 space-y-6">
-            <div>
-              <label for="">PROJECT/ACTIVITIES</label>
-            </div>
-             <label for="">-Anti-Drugs Symposium</label>
-          </div>
-          <!-- Modal footer -->
-          <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
-
-              <button data-modal-hide="staticModal" type="button" class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">Close</button>
-          </div>
-      </div>
-  </div>
-</div>
-
-<div id="yellow" data-modal-backdrop="static" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
-  <div class="relative w-full max-w-2xl max-h-full">
-      <!-- Modal content -->
-      <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-          <!-- Modal header -->
-          <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
-              <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-                 SK ASSIGNED - Jan Joseph Reynald Salome
-              </h3>
-              <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="yellow">
-                  <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
-                  </svg>
-                  <span class="sr-only">Close modal</span>
-              </button>
-          </div>
-          <!-- Modal body -->
-          <div class="p-6 space-y-6">
-            <div>
-              <label for="">PROJECT/ACTIVITIES</label>
-            </div>
-             <label for="">-PWD Rights and Privilege</label>
-             <ul>
-              <li>
-                (Week-long Training) 
-              </li>
-             
-              <li>
-                -Sports League (Summer League)
-                (Basketball)
-                (Volleyball)
-              </li>
-             </ul>
-          </div>
-          <!-- Modal footer -->
-          <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
-
-              <button data-modal-hide="staticModal" type="button" class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">Close</button>
-          </div>
-      </div>
-  </div>
-</div>
-
-<div id="pink" data-modal-backdrop="static" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
-  <div class="relative w-full max-w-2xl max-h-full">
-      <!-- Modal content -->
-      <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-          <!-- Modal header -->
-          <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
-              <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-                 SK ASSIGNED - Carl Jayson Sierra
-              </h3>
-              <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="staticModal">
-                  <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
-                  </svg>
-                  <span class="sr-only">Close modal</span>
-              </button>
-          </div>
-          <!-- Modal body -->
-          <div class="p-6 space-y-6">
-            <div>
-              <label for="">PROJECT/ACTIVITIES</label>
-            </div>
-             <label for="">Gender Sensitivity Symposium</label>
-             <label for="">-PWD Rights and Privilege</label>
-             <ul>
-              <li>
-                Symposium 
-              </li>
-              <li>
-                Assistance in PDW-ID 
-              </li>
-              <li>
-                Entrepreneurship 
-              </li>
-             </ul>
-          </div>
-          <!-- Modal footer -->
-          <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
-
-              <button data-modal-hide="staticModal" type="button" class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">Close</button>
-          </div>
-      </div>
-  </div>
-</div>
-
-<div id="purple" data-modal-backdrop="static" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
-  <div class="relative w-full max-w-2xl max-h-full">
-      <!-- Modal content -->
-      <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-          <!-- Modal header -->
-          <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
-              <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-                 SK ASSIGNED - For SK Sec. 
-              </h3>
-              <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="purple">
-                  <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
-                  </svg>
-                  <span class="sr-only">Close modal</span>
-              </button>
-          </div>
-          <!-- Modal body -->
-          <div class="p-6 space-y-6">
-            <div>
-              <label for="">PROJECT/ACTIVITIES</label>
-            </div>
-             <label for="">Fb page 
-              (Social media literacy symposium)</label>
-          </div>
-          <!-- Modal footer -->
-          <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
-
-              <button data-modal-hide="staticModal" type="button" class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">Close</button>
-          </div>
-      </div>
-  </div>
-</div>
-
-<div id="rainbow" data-modal-backdrop="rainbow" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
-  <div class="relative w-full max-w-2xl max-h-full">
-      <!-- Modal content -->
-      <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-          <!-- Modal header -->
-          <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
-              <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-                 SK ASSIGNED - NIKKI SILVA
-              </h3>
-              <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="rainbow">
-                  <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
-                  </svg>
-                  <span class="sr-only">Close modal</span>
-              </button>
-          </div>
-          <!-- Modal body -->
-          <div class="p-6 space-y-6">
-            <div>
-              <label for="">PROJECT/ACTIVITIES</label>
-            </div>
-             <label for="">- Leadership Training</label>
-          </div>
-          <!-- Modal footer -->
-          <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
-
-              <button data-modal-hide="staticModal" type="button" class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">Close</button>
-          </div>
-      </div>
-  </div>
-</div>
- 
-<div id="green" data-modal-backdrop="green" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
-  <div class="relative w-full max-w-2xl max-h-full">
-      <!-- Modal content -->
-      <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-          <!-- Modal header -->
-          <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
-              <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-                 SK ASSIGNED - Heaven Faith Dativo
-              </h3>
-              <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="green">
-                  <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
-                  </svg>
-                  <span class="sr-only">Close modal</span>
-              </button>
-          </div>
-          <!-- Modal body -->
-          <div class="p-6 space-y-6">
-            <div>
-              <label for="">PROJECT/ACTIVITIES</label>
-            </div>
-             <label for="">Clean and Green Program</label>
-             <label for="">Sow, grow and glow 
-              (Tree planting)
-              </label>
-              <label for="">-Oplan Limpyo sa 
-                (hagbas para lamok ay tigbash)
-                </label>
-
-          </div>
-          <!-- Modal footer -->
-          <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
-
-              <button data-modal-hide="staticModal" type="button" class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">Close</button>
-          </div>
-      </div>
-  </div>
-</div>
- 
-
-
-<script>
+  <script>
     document.getElementById("menu-toggle").addEventListener("click", function() {
       var menuItems = document.querySelector(".lg\\:flex.hidden");
       if (menuItems.classList.contains("hidden")) {
@@ -509,6 +1046,25 @@
         menuItems.classList.add("hidden");
       }
     });
+
+
+      const leadershipList = document.getElementById('leadership-list');
+      const toggleButton = document.querySelector('.toggle-button');
+  
+      let isCollapsed = true;
+  
+      toggleButton.addEventListener('click', () => {
+          if (isCollapsed) {
+              leadershipList.style.display = 'block';
+              isCollapsed = false;
+          } else {
+              leadershipList.style.display = 'none';
+              isCollapsed = true;
+          }
+      });
+
   </script>
+
+  
 </body>
 </html>
